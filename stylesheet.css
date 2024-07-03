@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #45C0CB;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    height: 120px;
+    width: calc(90px*4);
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    background: #201e1e;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+#operation{
+    position: absolute;
+    right: 1rem;
+    top:1rem;
+    font-size: 15px;
+    color: rgb(255,111,0);
+    transition: transform 0.2s ease,opacity 0.5s ease;
+    
+}
+.display input{
+    border-radius: 10px;
+    all: unset;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 35px;;
+    transition: none;
+}
+.container div{
+    display: flex;
+}
+input[type="button"]{
+    width: 90px;
+    height: 70px;
+    background: #333;
+    color: white;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: oblique;
+}
+input[type="button"]:hover{
+    background: white;
+    color:black
+}
+#equal{
+    width:180px;
+    background: #80DAE0;
+    color:black;
+}
+.special{
+    background: #222 !important;
+}
+.special:hover{
+    background: rgb(255,111,0) !important;
+}
+.operation-move-up{
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.result-appear {
+    opacity: 0;
+    animation: ease-in 1s  backwards;
+    an;
+}
+
+@keyframes slideIn {
+    from{
+        transform:translateX(-100%) ;
+        opacity: 0;
+    }to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.calculator{
+    border-style: solid;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom:30px;
+    padding-top: 25px;
+    border-radius: 30px;
+    background-color: #285F6C;
+    border-color: #285F6c;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 1);
+}
+#cornertopleft{
+    border-top-left-radius: 20px;
+}
+#cornertopright{
+    border-top-right-radius: 20px;
+}
+#cornerbottomleft{
+    border-bottom-left-radius: 20px;
+}
+.cornerbottomright{
+    border-bottom-right-radius: 20px;
+}
+h2{
+    align-items: center;
+    text-align: center;
+    color:#D7F5F6;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+#equal:hover{
+    background-color:#12313A;
+    color:#D7F5F6;
+}
